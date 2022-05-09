@@ -5,6 +5,16 @@ public class Ad {
     private long userId;
     private String title;
     private String description;
+    private long category;
+    private String photo;
+
+    public Ad(long userId, String title, String description, long category, String photo) {
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+        this.category = category;
+        this.photo = photo;
+    }
 
     public Ad(long id, long userId, String title, String description) {
         this.id = id;
@@ -17,6 +27,14 @@ public class Ad {
         this.userId = userId;
         this.title = title;
         this.description = description;
+    }
+
+    public Ad(long id, String title, String description, String category, String photo) {
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+        this.category = Long.parseLong(category);
+        this.photo = photo;
     }
 
     public long getId() {
