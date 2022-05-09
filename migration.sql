@@ -33,12 +33,7 @@ CREATE TABLE ads (
 
 
 INSERT INTO users (username, email, password) VALUES
-            ('Shaz', 'shaz@codeup.com', 'codeup-1'),
-            ('Luis', 'luis@codeup.com', 'codeup-1'),
-            ('Kaylah', 'kaylah@codeup.com', 'codeup-1'),
-            ('User1', 'user1@codeup.com', 'codeup-1'),
-            ('User2', 'user2@codeup.com', 'codeup-1'),
-            ('User3', 'user3@codeup.com', 'codeup-1');
+            ('bob4', 'bob@mail.com', '$2a$12$LiJeFcg5HZ.dAAy9LcePe.D8vg.IJS6Y6DqKWYuCpXU/4iC0srypa');
 
 INSERT INTO categories (id, description) VALUES
             (1, 'shoes'),
