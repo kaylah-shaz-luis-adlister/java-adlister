@@ -22,12 +22,34 @@
                 <textarea id="category" name="category" class="form-control" type="text"></textarea>
             </div>
             <div class="form-group">
-                <label for="photo">Photo</label>
-                <textarea id="photo" name="photo" class="form-control" type="text"></textarea>
+                <h3>File Upload:</h3>
+                Select a file to upload: <br />
+                <form action = "FileUploadServlet" method = "post"
+                      enctype = "multipart/form-data">
+                    <input type = "file" name = "file" size = "50" />
+                    <br />
+                    <input type = "submit" value = "Upload File" />
+                </form>
             </div>
             <input type="submit" class="btn btn-block btn-primary">
             <a href="/">Redirect to Dashboard</a>
         </form>
+
+        <----HTML5 Input Form Elements---->
+        <input id="ajaxFile" type="file"/> <br/>
+        <button onclick="uploadFile()">Upload</button>
+
+        <script>
+            async function uploadFile() {
+                let formData = new FormData();
+                formData.append("file", ajaxfile.files(0));
+                await fetch('fileuploadservlet', {
+                    method: "POST",
+                    body: formData
+                });
+                alert("The file upload was a success");
+            }
+        </script>
     </div>
 </body>
 </html>
