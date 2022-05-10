@@ -1,5 +1,5 @@
 body{
-background-color: #c5dcee;
+    background-color: #c5dcee;
 }
 
 .light-dark{
@@ -18,3 +18,21 @@ background-color: #c5dcee;
     color: #c5dcee;
     border: none;
 }
+
+.container{
+    padding-bottom: 4em;
+}
+
+#login-form{
+    margin: auto;
+    width: 70%;
+}
+
+#login{
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
