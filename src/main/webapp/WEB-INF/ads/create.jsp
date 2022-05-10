@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label for="category">Category</label>
-                <select id="category" name="category">
+                <select id="category" name="category" style="height: 50px;width: 165px">
                     <option>Select</option>
                     <option value="1">Shoes</option>
                     <option value="2">Shirt</option>
