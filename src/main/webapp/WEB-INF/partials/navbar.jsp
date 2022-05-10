@@ -11,35 +11,47 @@
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-
-    <form action="/search" method="post">
+           <br/>
+    <form action="/search" method="get">
         <div class="input-group">
             <div class="form-outline">
-                <input type="search" id="form1" class="form-control" />
                 <label class="form-label" for="form1">Search</label>
+                <input type="search" id="form1" class="form-control"/>
             </div>
-            <button type="submit" class="btn btn-primary">
-                <i class="fas fa-search"></i>
+            <br/><br/>
+            <button type="submit" class="btn btn-primary" style="width: 100px; height: 25px">
+                <i class="fas fa-search">Submit</i>
             </button>
         </div>
     </form>
-    <form action="/search" method="post">
-        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
-            <li>
-                <div class="input-group mt-2 mx-2">
-                    <div class="form-outline">
-                        <input type="search" id="form1" class="form-control-dropdown" />
-                        <label class="form-label" for="form1">Search</label>
-                    </div>
-                </div>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Shoes</a></li>
-            <li><a class="dropdown-item" href="#">Shirts</a></li>
-            <li><a class="dropdown-item" href="#">Pants</a></li>
-            <li><a class="dropdown-item" href="#">Outerwear</a></li>
-            <li><a class="dropdown-item" href="#">Accessories</a></li>
-            <li><a class="dropdown-item" href="#">Accessories</a></li>
-        </ul>
+<%--    <form action="/search" method="get">--%>
+<%--    <div class="form-group">--%>
+<%--        <label for="category">Category</label>--%>
+<%--        <select id="category" name="category" style="height: 50px;width: 165px">--%>
+<%--            <option>Select</option>--%>
+<%--            <option><a href="/search">Shoes</a></option>--%>
+<%--            <option value="2">Shirt</option>--%>
+<%--            <option value="3">Pants</option>--%>
+<%--            <option value="4">Outerwear</option>--%>
+<%--            <option value="5">Accessories</option>--%>
+<%--            <option value="6">Hats</option>--%>
+<%--        </select>--%>
+<%--        <br/><br/>--%>
+<%--    </div>--%>
+<%--    </form>--%>
+    <form class="form" action="/search" method="get">
+        <h5>Category</h5>
+        <select id="category" name="category" style="height: 50px;width: 165px">
+            <option value="1">Shoes</option>
+            <option value="2">Shirt</option>
+            <option value="3">Pants</option>
+            <option value="4">Outerwear</option>
+            <option value="5">Accessories</option>
+            <option value="6">Hats</option>
+        </select>
+<%--        <input id="dropdown box" type="text" class="w-75" placeholder="search...">--%>
+        <br>
+        <br>
+        <input id="submit" type="submit" class="w-75">
     </form>
 </nav>
