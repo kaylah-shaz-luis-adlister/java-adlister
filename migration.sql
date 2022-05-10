@@ -46,10 +46,10 @@ INSERT INTO categories (id, description) VALUES
 INSERT INTO ads (user_id, title, description, photo, category) VALUES
             (1, 'Doc Martens for sale', 'Selling brand new never worn Doc Marten boots', 'https://i.guim.co.uk/img/media/ac1c53dc8a3b549480149d041e9299097cb39955/0_302_1600_960/master/1600.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=72a96ac2a6a11b027782df30148181e9', 1),
             (1, 'Stetson Hat', 'Lightly used stetson hat for sale', 'https://cdn.nudiejeans.com/img/Western-Hat-Brown-180998B10-01_1600x1600.jpg', 6),
-             (2, 'Wrangler Jeans', 'Lightly used wrangler jeans for sale. Size 32x30.', 'https://media.kohlsimg.com/is/image/kohls/1692397_Dark_Denim?wid=600&hei=600&op_sharpen=1', 3),
-              (3, 'Cowboy boots', 'Boots for sale size 10', 'https://m.media-amazon.com/images/I/811VSTCeOPL._AC_UY500_.jpg', 1),
-            (4, 'White Shirt', 'White button-up shirt in great condition. Size medium', 'https://m.media-amazon.com/images/I/51jeA4UDYHL._AC_UL1200_.jpg', 2),
-            (5, 'White t-shirt', 'Never worn large white t-shirt', 'https://www.gap.com/webcontent/0020/581/516/cn20581516.jpg', 2);
+             (1, 'Wrangler Jeans', 'Lightly used wrangler jeans for sale. Size 32x30.', 'https://media.kohlsimg.com/is/image/kohls/1692397_Dark_Denim?wid=600&hei=600&op_sharpen=1', 3),
+              (1, 'Cowboy boots', 'Boots for sale size 10', 'https://m.media-amazon.com/images/I/811VSTCeOPL._AC_UY500_.jpg', 1),
+            (1, 'White Shirt', 'White button-up shirt in great condition. Size medium', 'https://m.media-amazon.com/images/I/51jeA4UDYHL._AC_UL1200_.jpg', 2),
+            (1, 'White t-shirt', 'Never worn large white t-shirt', 'https://www.gap.com/webcontent/0020/581/516/cn20581516.jpg', 2);
 
 
 
