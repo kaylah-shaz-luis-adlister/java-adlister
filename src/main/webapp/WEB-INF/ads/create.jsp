@@ -19,37 +19,26 @@
             </div>
             <div class="form-group">
                 <label for="category">Category</label>
-                <textarea id="category" name="category" class="form-control" type="text"></textarea>
+                <select id="category" name="category">
+                    <option>Select</option>
+                    <option value="1">Shoes</option>
+                    <option value="2">Shirt</option>
+                    <option value="3">Pants</option>
+                    <option value="4">Outerwear</option>
+                    <option value="5">Accessories</option>
+                    <option value="6">Hats</option>
+                </select>
+                <br/><br/>
             </div>
-            <div class="form-group">
-                <h3>File Upload:</h3>
-                Select a file to upload: <br />
-                <form action = "FileUploadServlet" method = "post"
-                      enctype = "multipart/form-data">
-                    <input type = "file" name = "file" size = "50" />
-                    <br />
-                    <input type = "submit" value = "Upload File" />
-                </form>
+            <div>
+            <label for="photo">Photo</label>
+            <textarea id="photo" name="photo" class="form-control" type="text"></textarea>
             </div>
+            <br/>
             <input type="submit" class="btn btn-block btn-primary">
+            <br/>
             <a href="/">Redirect to Dashboard</a>
         </form>
-
-        <----HTML5 Input Form Elements---->
-        <input id="ajaxFile" type="file"/> <br/>
-        <button onclick="uploadFile()">Upload</button>
-
-        <script>
-            async function uploadFile() {
-                let formData = new FormData();
-                formData.append("file", ajaxfile.files(0));
-                await fetch('fileuploadservlet', {
-                    method: "POST",
-                    body: formData
-                });
-                alert("The file upload was a success");
-            }
-        </script>
     </div>
 </body>
 </html>
