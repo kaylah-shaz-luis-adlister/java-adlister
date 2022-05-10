@@ -4,6 +4,7 @@
     <jsp:include page="partials/head.jsp">
         <jsp:param name="title" value="Register For Our Site!" />
     </jsp:include>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <jsp:include page="partials/navbar.jsp" />
@@ -28,6 +29,14 @@
             </div>
             <input type="submit" class="btn btn-primary btn-block">
         </form>
+        <div class="light-dark">
+            <button class="dark">Light/Dark</button>
+        </div>
     </div>
+    <script>
+        $('.dark').click(function (){
+            $('body').toggleClass('dark-mode')
+        });
+    </script>
 </body>
 </html>

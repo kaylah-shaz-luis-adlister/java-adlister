@@ -4,6 +4,7 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Please Log In" />
     </jsp:include>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
@@ -20,6 +21,14 @@
             </div>
             <input type="submit" class="btn btn-primary btn-block" value="Log In">
         </form>
+        <div class="light-dark">
+            <button class="dark">Light/Dark</button>
+        </div>
     </div>
+    <script>
+        $('.dark').click(function (){
+            $('body').toggleClass('dark-mode')
+        });
+    </script>
 </body>
 </html>

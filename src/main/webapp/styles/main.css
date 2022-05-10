@@ -1,0 +1,20 @@
+body{
+background-color: #c5dcee;
+}
+
+.light-dark{
+    position: fixed;
+    text-align: center;
+    bottom: 1em;
+    right: 1em;
+}
+
+.dark-mode{
+    background-color: #23272a;
+    color: #c5dcee;
+}
+.dark{
+    background-color: #2a343b;
+    color: #c5dcee;
+    border: none;
+}
