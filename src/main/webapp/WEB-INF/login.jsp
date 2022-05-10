@@ -9,8 +9,8 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
-        <h1>Please Log In</h1>
-        <form action="/login" method="POST">
+        <h1 class="align-self-center">Please Log In</h1>
+        <form action="/login" method="POST" id="login-form" class="align-items-center">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input id="username" name="username" class="form-control" type="text">
@@ -19,7 +19,10 @@
                 <label for="password">Password</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>
-            <input type="submit" class="btn btn-primary btn-block" value="Log In">
+            <button type="submit" id="login" class="btn btn-primary col-md-6 mx-auto">Log In</button>
+<%--            <a href="/register">--%>
+<%--                <button id="sign-up" class="btn btn-primary col-md-6 mx-1">Sign Up</button>--%>
+<%--            </a>--%>
         </form>
         <div class="light-dark">
             <button class="dark">Light/Dark</button>
