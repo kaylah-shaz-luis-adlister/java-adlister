@@ -12,7 +12,7 @@
             <a class="navbar-brand" href="/search">Home</a>
         </div>
         <ul class="nav navbar-nav navbar-right col-3 d-flex flex-row justify-content-evenly">
-            <li><a href="/create">Create a post</a></li>
+            <li><a href="/ads/create">Create a post</a></li>
             <li><a href="/">Dashboard</a></li>
         </ul>
         </div>
