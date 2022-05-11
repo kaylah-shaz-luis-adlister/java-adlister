@@ -84,7 +84,7 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> searchCategory(String category) {
         PreparedStatement statement;
 
-        String query = "SELECT * FROM ads WHERE category LIKE CONCAT('%',?,'%')";
+        String query = "SELECT * FROM ads WHERE category = (?)";
 
         try {
 
