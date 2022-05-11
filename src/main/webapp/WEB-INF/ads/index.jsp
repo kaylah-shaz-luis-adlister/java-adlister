@@ -10,17 +10,18 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<div class="ad-container">
+<div class="ad-container d-flex justify-content-around p-2">
     <h1>Here Are all the ads!</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6" class="ad">
+        <div class="ad col-md-6 d-flex flex-column align-items-center">
             <h2>${ad.title}</h2>
             <image class="img" src="${ad.photo}" style="width: 400px; height: 400px;"></image>
             <p>${ad.description}</p>
         </div>
     </c:forEach>
 </div>
+<!--button to toggle light and dark mode-->
 <div class="light-dark">
     <button class="dark">Light/Dark</button>
 </div>
@@ -28,8 +29,10 @@
     $('.dark').click(function (){
         $('body').toggleClass('dark-mode')
     });
-    $('.ad').mouseenter(function(){
-        $(this).toggleClass('shadow')
+    $('.ad').hover(function() {
+        $(this).css('box-shadow',"10px 5px 5px ");
+    }, function(){
+        $(this).css('box-shadow', '0px 0px 0px ');
     });
 </script>
 
