@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="/ads">Home</a>
+            <a class="navbar-brand" href="/search">Home</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/register">Create Account</a></li>
@@ -25,7 +25,7 @@
     </form>
 <%--    Above is the search bar, Below is the category dropbox--%>
     <br>
-    <form class="form" action="/search" method="get">
+    <form class="form" action="/ads" method="get">
         <label class="form-label" for="category">Category</label>
         <select id="category" name="category" style="height: 50px;width: 165px">
             <option value="" disabled selected>Select your option</option>
