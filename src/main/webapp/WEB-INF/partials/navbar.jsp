@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header col-9">
-            <a class="navbar-brand" href="/search">Home</a>
+            <a class="navbar-brand" href="/ads">Home</a>
         </div>
         <ul class="nav navbar-nav navbar-right col-3 d-flex flex-row justify-content-evenly">
             <li><a href="/register">Create Account</a></li>

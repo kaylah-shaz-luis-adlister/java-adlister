@@ -19,7 +19,7 @@
                 <label for="password">Password</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>
-            <button type="submit" id="login" class="btn btn-primary col-md-6 mx-auto">Log In</button>
+            <button type="submit" id="login" class="btn btn-primary btn-large mx-auto pt-2 align-self-center">Log In</button>
 <%--            <a href="/register">--%>
 <%--                <button id="sign-up" class="btn btn-primary col-md-6 mx-1">Sign Up</button>--%>
 <%--            </a>--%>
