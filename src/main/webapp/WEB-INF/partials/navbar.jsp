@@ -19,11 +19,12 @@
                 <label class="form-label" for="form1">Search</label>
                 <input type="search" id="form1" class="form-control"/>
             </div>
-            <br/><br/>
+            <br>
             <input id="submit" type="submit" class="w-75">
-<%--                <i class="fas fa-search">Submit</i>--%>
         </div>
     </form>
+<%--    Above is the search bar, Below is the category dropbox--%>
+    <br>
     <form class="form" action="/search" method="get">
         <label class="form-label" for="category">Category</label>
         <select id="category" name="category" style="height: 50px;width: 165px">
@@ -35,7 +36,6 @@
             <option value="5">Accessories</option>
             <option value="6">Hats</option>
         </select>
-        <br>
         <br>
         <input id="submit1" type="submit" class="w-75">
     </form>
