@@ -5,6 +5,7 @@
             <a class="navbar-brand" href="/ads">Home</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="/register">Create Account</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
             <li></li>
@@ -19,28 +20,12 @@
                 <input type="search" id="form1" class="form-control"/>
             </div>
             <br/><br/>
-            <button type="submit" class="btn btn-primary" style="width: 100px; height: 25px">
-                <i class="fas fa-search">Submit</i>
-            </button>
+            <input id="submit" type="submit" class="w-75">
+<%--                <i class="fas fa-search">Submit</i>--%>
         </div>
     </form>
-<%--    <form action="/search" method="get">--%>
-<%--    <div class="form-group">--%>
-<%--        <label for="category">Category</label>--%>
-<%--        <select id="category" name="category" style="height: 50px;width: 165px">--%>
-<%--            <option>Select</option>--%>
-<%--            <option><a href="/search">Shoes</a></option>--%>
-<%--            <option value="2">Shirt</option>--%>
-<%--            <option value="3">Pants</option>--%>
-<%--            <option value="4">Outerwear</option>--%>
-<%--            <option value="5">Accessories</option>--%>
-<%--            <option value="6">Hats</option>--%>
-<%--        </select>--%>
-<%--        <br/><br/>--%>
-<%--    </div>--%>
-<%--    </form>--%>
     <form class="form" action="/search" method="get">
-        <h5>Category</h5>
+        <label class="form-label" for="category">Category</label>
         <select id="category" name="category" style="height: 50px;width: 165px">
             <option value="" disabled selected>Select your option</option>
             <option value="1">Shoes</option>
@@ -50,9 +35,8 @@
             <option value="5">Accessories</option>
             <option value="6">Hats</option>
         </select>
-<%--        <input id="dropdown box" type="text" class="w-75" placeholder="search...">--%>
         <br>
         <br>
-        <input id="submit" type="submit" class="w-75">
+        <input id="submit1" type="submit" class="w-75">
     </form>
 </nav>
