@@ -15,8 +15,10 @@ public class SearchPostsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String search = request.getParameter("search");
+        String category = request.getParameter("category");
 
         request.setAttribute("ads", DaoFactory.getAdsDao().search(search));
+        request.setAttribute("categories", DaoFactory.getAdsDao().searchCategory(category));
 
         request.getRequestDispatcher("/WEB-INF/partials/search.jsp").forward(request, response);
     }

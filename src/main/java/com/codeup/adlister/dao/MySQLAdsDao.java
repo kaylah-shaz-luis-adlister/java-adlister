@@ -61,14 +61,14 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> search(String search) {
         PreparedStatement statement;
 
-        String query = "SELECT * FROM ads WHERE title LIKE '%(?)%' OR description LIKE '%(?)%'";
+        String query = "SELECT * FROM ads WHERE title LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%')";
 
         try {
 
             statement = connection.prepareStatement(query);
 
-            statement.setString((int) 1, search);
-            statement.setString((int) 2, search);
+            statement.setString(1, search);
+            statement.setString(2, search);
 
             ResultSet rs = statement.executeQuery();
 
@@ -78,6 +78,27 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error searching for ads", e);
         }
 
+    }
+
+    @Override
+    public List<Ad> searchCategory(String category) {
+        PreparedStatement statement;
+
+        String query = "SELECT * FROM ads WHERE category LIKE CONCAT('%',?,'%')";
+
+        try {
+
+            statement = connection.prepareStatement(query);
+
+            statement.setString(1, category);
+
+            ResultSet rs = statement.executeQuery();
+
+            return createAdsFromResults(rs);
+
+        } catch (SQLException e) {
+            throw new RuntimeException("Error searching for ads", e);
+        }
     }
 
     private Ad extractAd(ResultSet rs) throws SQLException {
