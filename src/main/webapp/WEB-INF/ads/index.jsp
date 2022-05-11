@@ -32,8 +32,8 @@
     $('.ad').hover(function() {
         $(this).css('box-shadow',"10px 5px 5px ");
     }, function(){
+
         $(this).css('box-shadow', '0px 0px 0px ');
-    });
 </script>
 
 </body>

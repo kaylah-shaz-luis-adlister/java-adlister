@@ -16,12 +16,14 @@
     <br/>
     <%--    Search box--%>
 
+
     <form class="col-6 d-flex flex-row flex-wrap-nowrap align-items-center pt-1" action="/search" method="get">
         <div class="input-group">
             <div class="form-outline <%--col-6 d-flex justify-content-evenly align-items-center pt-1--%>">
                 <label class="form-label" for="form1">Search</label>
                 <input type="search" id="form1" class="form-control w-75" name="search"/>
                 <button id="submit" type="submit" class="btn btn-primary btn-sm">Search</button>
+
             </div>
         </div>
     </form>
