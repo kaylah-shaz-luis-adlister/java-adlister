@@ -11,4 +11,6 @@ public interface Ads {
     Long insert(Ad ad);
 //    search posts with a user provided string
     List<Ad> search(String search);
+
+    List<Ad> searchCategory(String category)
 }
