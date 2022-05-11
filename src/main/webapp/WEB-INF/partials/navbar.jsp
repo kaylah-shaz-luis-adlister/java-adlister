@@ -18,8 +18,8 @@
         <div class="input-group <%--col-6 d-flex justify-content-evenly flex-wrap-nowrap--%>">
             <div class="form-outline col-6 d-flex justify-content-evenly align-items-center pt-1">
                 <label class="form-label" for="form1">Search</label>
-                <input type="search" id="form1" class="form-control"/>
-            <input id="submit" type="submit" class="btn btn-primary w-25">
+                <input type="search" id="form1" class="form-control" name="search"/>
+                <input id="submit" type="submit" class="btn btn-primary w-25">
             </div>
         </div>
     </form>
