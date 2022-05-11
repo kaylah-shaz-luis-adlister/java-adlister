@@ -12,5 +12,5 @@ public interface Ads {
 //    search posts with a user provided string
     List<Ad> search(String search);
 
-    List<Ad> searchCategory(String category)
+    List<Ad> searchCategory(String category);
 }

@@ -29,8 +29,10 @@
     $('.dark').click(function (){
         $('body').toggleClass('dark-mode')
     });
-    $('.ad').mouseenter(function(){
-        $(this).toggleClass('shadow')
+    $('.ad').hover(function() {
+        $(this).css('box-shadow',"10px 5px 5px ");
+    }, function(){
+        $(this).toggleClass('shadow');
     });
 </script>
 
