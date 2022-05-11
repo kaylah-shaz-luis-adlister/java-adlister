@@ -12,8 +12,10 @@
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-           <br/>
-<%--    Search box--%>
+
+    <br/>
+    <%--    Search box--%>
+
     <form action="/search" method="get">
         <div class="input-group <%--col-6 d-flex justify-content-evenly flex-wrap-nowrap--%>">
             <div class="form-outline col-6 d-flex justify-content-evenly align-items-center pt-1">
@@ -23,7 +25,9 @@
             </div>
         </div>
     </form>
-<%--    Category drop-down--%>
+
+    <%--    Category drop-down--%>
+
     <form class="form col-6 d-flex justify-content-evenly align-items-center pt-1" action="/search" method="get">
         <label class="form-label" for="category">Category</label>
         <select id="category" name="category" style="height: 40px;width: 165px">
