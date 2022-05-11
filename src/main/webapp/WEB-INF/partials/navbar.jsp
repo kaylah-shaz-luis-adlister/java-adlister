@@ -42,6 +42,7 @@
     <form class="form" action="/search" method="get">
         <h5>Category</h5>
         <select id="category" name="category" style="height: 50px;width: 165px">
+            <option value="" disabled selected>Select your option</option>
             <option value="1">Shoes</option>
             <option value="2">Shirt</option>
             <option value="3">Pants</option>
