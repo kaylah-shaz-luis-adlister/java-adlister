@@ -10,13 +10,13 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<div class="container">
+<div class="ad-container">
     <h1>Here Are all the ads!</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="col-md-6" class="ad">
             <h2>${ad.title}</h2>
-            <image src="${ad.photo}" style="width: 400px; height: 400px;"></image>
+            <image class="img" src="${ad.photo}" style="width: 400px; height: 400px;"></image>
             <p>${ad.description}</p>
         </div>
     </c:forEach>
@@ -27,6 +27,9 @@
 <script>
     $('.dark').click(function (){
         $('body').toggleClass('dark-mode')
+    });
+    $('.ad').mouseenter(function(){
+        $(this).toggleClass('shadow')
     });
 </script>
 
