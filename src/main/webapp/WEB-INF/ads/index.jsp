@@ -16,7 +16,7 @@
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>${ad.title}</h2>
-            <image src="${ad.photo}" style="width: 200px; height: 200px;"></image>
+            <image src="${ad.photo}" style="width: 400px; height: 400px;"></image>
             <p>${ad.description}</p>
         </div>
     </c:forEach>
