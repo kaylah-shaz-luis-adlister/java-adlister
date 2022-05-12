@@ -37,11 +37,14 @@
     $('.dark').click(function (){
         $('body').toggleClass('dark-mode')
     });
-    $('.ad').mouseenter(function(){
-        $(this).toggleClass('shadow')
+    $('.ad').hover(function() {
+        $(this).css('box-shadow',"10px 5px 5px ");
+    }, function() {
+        $(this).css('box-shadow', '0px 0px 0px ');
     });
 </script>
 
 </body>
 </html>
 
+0
