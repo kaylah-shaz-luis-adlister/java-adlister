@@ -19,10 +19,8 @@
                 <label for="password">Password</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>
-            <button type="submit" id="login" class="btn btn-primary btn-large mx-auto pt-2 align-self-center">Log In</button>
-<%--            <a href="/register">--%>
-<%--                <button id="sign-up" class="btn btn-primary col-md-6 mx-1">Sign Up</button>--%>
-<%--            </a>--%>
+
+            <input type="submit" class="btn btn-primary btn-block mt-1" value="Log In">
         </form>
         <div class="light-dark">
             <button class="dark">Light/Dark</button>

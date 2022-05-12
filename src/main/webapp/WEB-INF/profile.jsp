@@ -19,12 +19,19 @@
         </nav>
 </head>
 <body>
-<br>
-<br>
-   <div class="container">
-       <p>Username:<h3>${sessionScope.user.username}</h3></p>
-       <p>Email:<h3>${sessionScope.user.email}</h3></p>
-   </div>
+
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+  <br>
+  <br>
+    <div class="container">
+        <h1>Welcome, ${sessionScope.user.username}!</h1>
+      <p>Email:<h3>${sessionScope.user.email}</h3></p>
+    </div>
+    <script>
+        $('.dark').click(function (){
+            $('body').toggleClass('dark-mode')
+        });
+    </script>
 
 </body>
 </html>
