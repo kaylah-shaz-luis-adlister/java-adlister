@@ -9,4 +9,8 @@ public interface Ads {
     List<Ad> all();
     // insert a new ad and return the new ad's id
     Long insert(Ad ad);
+//    search posts with a user provided string
+    List<Ad> search(String search);
+
+    List<Ad> searchCategory(String category);
 }

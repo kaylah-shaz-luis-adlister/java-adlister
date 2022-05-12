@@ -1,5 +1,5 @@
 body{
-background-color: #c5dcee;
+    background-color: #c5dcee;
 }
 
 .light-dark{
@@ -7,6 +7,7 @@ background-color: #c5dcee;
     text-align: center;
     bottom: 1em;
     right: 1em;
+    border-radius: 20px;
 }
 
 .dark-mode{
@@ -18,3 +19,45 @@ background-color: #c5dcee;
     color: #c5dcee;
     border: none;
 }
+
+.container{
+    padding-bottom: 4em;
+}
+
+.ad-container{
+    padding-bottom: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#login-form{
+    margin: auto;
+    width: 70%;
+}
+
+#login{
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.img{
+    border-radius: 25px;
+    padding-bottom: 1em;
+}
+
+.shadow{
+
+    box-shadow: 10px 7px 3px slategray;
+}
+
+.navbar{
+    color: #c5dcee;
+}
+
+
