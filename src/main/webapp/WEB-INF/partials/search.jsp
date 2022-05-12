@@ -11,7 +11,7 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="ad-container d-flex justify-content-around p-2">
-    <h1>Here Are all the ads!</h1>
+    <h1>Welcome to the Closet Exchange!</h1>
 
     <c:forEach var="ad" items="${ads}">
         <div class="ad col-md-6 d-flex flex-column align-items-center">
@@ -46,5 +46,3 @@
 
 </body>
 </html>
-
-0
